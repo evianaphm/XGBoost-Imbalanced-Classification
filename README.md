@@ -7,6 +7,12 @@ The goal of this project was to detect rare "Positive" events (Class 1) in a lar
 
 Unlike standard classification tasks that prioritize Accuracy, this project focused on maximizing Partial AUC (pAUC) within a strict False Positive Rate range (max FPR = 0.01). The model was designed to prioritize high-precision detection, ensuring that when a positive prediction is made, it is highly likely to be correct.
 
+## Data Columns
+`X1, X2, …, X29` are the numerical features for each online session.
+`Time` refers to the elapsed interval starting at the first recorded observation.
+`Label` is the response for each online session.
+`id` - this is the identifier for the records in test.csv file.
+
 ## Key Results
 The model was evaluated on a held-out validation set with the following performance metrics:
 
